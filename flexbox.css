@@ -300,7 +300,7 @@ p{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;    
-    justify-content: space-evenly;
+    justify-content: space-between  ;
     padding: 5px;
 }
 
@@ -316,6 +316,7 @@ p{
     align-items: flex-start;
     margin: 5px;
     padding: 15px;
+    width: 1190px;
 }
 
 .experience__title{

@@ -1,0 +1,242 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: white;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Sección Menu*/
+
+.menu{
+    z-index: 1;
+    backdrop-filter: blur(20px);
+    top: 0;
+    height: auto;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+}
+
+.menu__header{
+    font-size: 30px;
+    font-style: normal;
+    color: #5b1f00;
+    letter-spacing: 5px;
+    height: 70px;   
+}
+
+.menu__list{
+    font-size: 15px;
+}
+
+.menu__list__item{
+    color: black;
+    background-color: #e6b68b;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.menu__list__item:hover{
+    background-color: #ffffff;
+    border: solid 2px #e6b68b;
+    transition: all 0.3s linear;
+}
+/*Sección Title*/
+
+.title{
+    z-index: 10;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+}
+
+.title__div{
+    background: linear-gradient(45deg, #f0ecec 75%, #e6b68b);
+    border-radius: 100px;
+}
+
+.title__profile{
+    height: 250px;
+    width: 250px;
+}
+
+.title__bio{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.title__subsection{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.title__network{
+    font-size: 15px;
+}
+
+.title__network__item:hover{
+    font-size: 20px;
+}
+
+/*Sección About*/
+
+.about__container{
+    font-size: 15px;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+}
+
+.about__title{
+    font-size: 25px;
+}
+
+.about__paragraph{
+    text-align: justify;
+}
+
+/*Sección Skills*/
+
+.skills{
+    font-size: 15px;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    background: linear-gradient(45deg, #f0ecec 25%, #e6b68b);
+    border-radius: 100px;
+}
+
+.skills__title{
+    font-size: 25px;
+}
+
+.skill_line{
+    font-size: 15px;
+}
+
+/*Sección Hobbies*/
+
+.hobbies{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    background: linear-gradient(45deg, #f0ecec 50%, #e6b68b);
+    border-radius: 100px;
+}
+
+.hobbies__title{
+    font-size: 25px;
+}
+
+.hobbies__box{
+    font-size: 18px;
+}
+
+/*Sección Hobbies*/
+
+.academic{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    background: linear-gradient(45deg, #f0ecec 75%, #e6b68b);
+    border-radius: 100px;
+}
+
+.academic__title{
+    font-size: 25px;
+}
+
+.academic__courses__item__title{
+    font-size: 18px;
+}
+
+.academic__courses__item__subtitle{
+    font-size: 16px;
+}
+
+/*Sección Experiencia*/
+
+.experience{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    background: linear-gradient(45deg, #e6b68b , #f0ecec 25%);
+    border-radius: 100px;
+}
+
+.experience__section__title{
+    font-size: 25px;
+}
+
+.experience__title{
+    font-size: 18px;
+}
+
+.experience__img{
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.experience__repo{
+    color: black;
+    background-color: #e9d8c8;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin:5px;
+    width: 68px;
+}
+
+.experience__demo{
+    color: black;
+    background-color: #e9d8c8;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin:5px;
+    width: 68px;
+}
+
+.experience__repo:hover{
+    background-color: #e6b68b;
+    border: solid 2px #e6b68b;
+    transition: all 0.3s linear;
+}
+
+.experience__demo:hover{
+    background-color: #e6b68b;
+    border: solid 2px #e6b68b;
+    transition: all 0.3s linear;
+}
+
+/*Sección Contacto*/
+
+.formcontato{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+}
+
+.formcontato__title{
+    font-size: 25px;
+}
+
+.formcontato__subtext{
+    font-size: 18px;
+}
+
+/*Sección Footer*/
+
+.footer{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Calisto MT, Times New Roman, serif;
+    font-size: 12px;
+}

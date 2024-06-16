@@ -113,9 +113,9 @@ body{
 
 .signature{
     display: flex;
-    height: 70px;
-    width: 100px;
+    justify-content: flex-start;
     margin: 7px 10px;
+    width: 130px;
 }
 
 /*Sección Skills*/
@@ -334,7 +334,7 @@ p{
 }
 
 #juego{
-    width: 200px;  
+    width: 180px;  
 }
 
 .experience__description{
@@ -352,7 +352,7 @@ p{
 }
 
 .experience__img2{
-    min-width: 200px; 
+    min-width: 180px; 
     height: 240px;
     padding: 15px;
 }

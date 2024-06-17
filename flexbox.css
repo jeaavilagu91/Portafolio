@@ -8,8 +8,9 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
     position: relative; 
+    padding: 30px 30px 0px 30px;
+
 }
 
 .menu__header{
@@ -430,4 +431,279 @@ p{
     align-items: center;
 }
 
+/*reponsive*/
+
+@media (max-width: 1280px){
+
+    .menu{
+        display: flex;
+        min-width: 1220px;
+    }
+   
+    .container{
+        padding: 20px;
+        min-width: 1240px;
+    }
+    
+    .title__container{
+        padding: 20px;
+    }  
+
+    .formcontato{
+        min-width: 1260px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .formcontato__title{
+        margin: 0px 100px;
+    }
+
+    .footer{
+        min-width: 1280px;
+    }
+
+}
+
+@media (max-width: 1024px ){
+
+    .menu{
+        display: flex;
+        min-width: 964px;
+        width: auto;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-width: 964px;
+    }
+
+    .container{
+        min-width: 984px;
+        padding: 20px;
+    }
+    
+    .title__container{
+        padding: 20px;
+    }  
+
+    .formcontato{
+        min-width: 1004px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .formcontato__contacto{
+        justify-content: flex-start;
+    }
+
+    .formcontato__title{
+        margin: 0px 50px;
+    }
+
+    .formcontato__text{
+        padding: 0px 0px 0px 80px;
+    }
+
+    .footer{
+        min-width: 1024px;
+    }
+    
+}
+
+@media (max-width: 768px ){
+
+    .menu{
+        display: flex;
+        min-width: 708px;
+        width: auto;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-width: 768px;
+    }
+
+    .container{
+        min-width: 728px;
+        padding: 20px;
+    }
+    
+    .title__container{
+        padding: 20px;
+    }  
+
+    .title__profile{
+        width: 150px;
+        height: 150px;
+    }
+
+    #juego{
+        width: 130px;
+    }
+
+    .experience__img2{
+        min-width: 130px;
+        height: 210px;
+
+    }
+
+    .formcontato{
+        min-width: 768px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .formcontato__contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formcontato__title{
+        margin: 0px 50px;
+    }
+
+    .formcontato__text{
+        padding-left: 0px;
+    }
+
+    .formcontato__img {
+        width: 100px;
+        padding-right: 20px;
+    }
+
+    .footer{
+        min-width: 768px;
+    }
+    
+}
+
+@media (max-width: 480px ){
+
+    .menu{
+        display: flex;
+        min-width: 420px;
+        width: auto;
+    }
+
+    .menu__list{
+        justify-content: center;
+    }
+
+    .title__div{
+        flex-direction: column;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        min-width: 480px;
+    }
+
+    .container{
+        min-width: 440px;
+        padding: 20px;
+    }
+    
+    .title__container{
+        padding: 20px;
+    }  
+
+    .title__profile{
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills__box{
+        width: 100px;
+        height: 100px;
+    }
+
+    .img__HTML{
+        max-width: 60px;
+        max-height: 60%;    
+    }
+    
+    .img__Java{
+        max-width: 60px;
+        max-height: 60px;    
+    }
+    
+    .img__CSS{
+        max-width: 60px;
+        max-height: 60px;        
+    }
+    
+    .img__CAD{
+        max-width: 60px;
+        max-height: 60px;    
+    }
+
+    .hobbies__box{
+        padding: 15px;
+    }
+
+    .experience {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .experiencie__box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .experience__info{
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+
+    .experience__description{
+        padding-top: 0px;
+    }
+
+    #juego{
+        width: 80px;
+        padding-bottom: 0px;
+    }
+
+    .experience__img2{
+        min-width: 100px;
+        height: 130px;
+        padding-bottom: 0px;
+    }
+    .experience{
+    background: linear-gradient(45deg, #e6b68b , #f0ecec 0%);
+    }
+
+    .formcontato{
+        min-width: 460px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .formcontato__contacto{
+        justify-content: flex-start;
+    }
+
+    .formcontato__title{
+        margin: 0px 50px;
+    }
+
+    .formcontato__text{
+        padding: 0px 10px;
+    }
+
+    .formcontato__img {
+        display: none;
+    }
+
+    .footer{
+        min-width: 480px;
+    }
+    
+}
 

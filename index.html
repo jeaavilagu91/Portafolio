@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <title> Jeisson Ávila Portafolio</title>
 </head>
 
@@ -197,11 +198,15 @@
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <p class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </p>
                     <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="6" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <input class="formcontato__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <span id="errorNombre" class="errorNombre" style="display: none;">El campo nombre no puede estar vacío.</span>
+                        <input class="formcontato__input" type="email" id="email" name="email" placeholder="E-mail">
+                        <span id="errorEmail" class="errorEmail" style="display: none;">El campo e-mail debe estar en el formato: texto@texto.com y no puede estar vacío.</span>
+                        <input class="formcontato__input" type="text" id="asunto" name="asunto" placeholder="Assunto">
+                        <span id="errorAsunto" class="errorAsunto" style="display: none;">El campo asunto no puede estar vacío.</span>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Ingresa un mensaje"></textarea>
+                        <span id="errorMensaje" class="errorMensaje" style="display: none;">Ingresa un mensaje de mínimo 10 y máx 300 caracteres</span>
+                        <button type="submit" class="formcontato__botao" id="botonEnviar" disabled>Enviar mensaje</button>
                     </form>
                 </div>
                 <div class="formcontato--esquerda">
